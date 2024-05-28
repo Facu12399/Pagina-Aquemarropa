@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Palanquin", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/*CONTENEDOR*/
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 10px;
+    text-align: center;
+}
+
+.grid-container > * {
+    background-color: #fff;
+    color: #873600;
+    border: 1px solid #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+/*HEADER*/
+
+.header{
+    font-weight: bold;
+}
+
+/*MENU*/
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    padding: 10px;
+}
+
+.menu #menu-desplegable{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.menu #menu-desplegable a{
+    text-decoration: none;
+    color: #873600;
+    font-weight: bold;
+}
+
+.menu #menu-desplegable li{
+    padding: 10px;
+}
+
+.menu #menu-desplegable #sacar-borde{
+    border-right: none;
+}
+
+#catalogo-desplegable{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: start;
+    display: none;
+}
+
+/*MAIN*/
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main section, .main h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/*MAS VENDIDOS*/
+
+.galeria-grid-mas-vendidos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.item-galeria{
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 350px;
+}
+
+.item-galeria figure{
+    width: 300px;
+    height: 200px;
+}
+.item-galeria figure a{
+    text-decoration: none;
+}
+
+.item-galeria figure a img{
+    width: 100%;
+    height: 100%;
+}
+
+.info-producto{
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 10px;
+}
+
+.info-producto > *{
+    font-size: 12px;
+    color: #000;
+}
+
+.precio{
+    font-weight: bold;
+}
+
+/*PRODUCTOS*/
+
+.galeria-grid-productos{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.item-galeria-producto{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 252px;
+    height: 152px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px 0 #000;
+}
+
+.item-galeria-producto figure{
+    width: 250px;
+    height: 150px;
+}
+.item-galeria-producto figure a{
+    text-decoration: none;
+}
+
+.item-galeria-producto figure a img{
+    width: 100%;
+    height: 100%;
+}
+
+.item-title-producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 150px;
+}
+
+.item-title-producto div{
+    display: flex;
+    flex-direction: column;
+}
+
+/*FOOTER*/
+
+.footer{
+    background-color: #dfdfdf;
+}
+
+.contenedor-footer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row: auto;
+}
+
+.lista-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 12px;
+}
+
+.lista-footer li{
+    list-style: none;
+    padding: 5px;
+}
+
+.lista-footer li a{
+    text-decoration: none;
+    color: #873600;
+}
+
+.lista-footer li a img{
+    width: 10px;
+    height: 10px;
+}
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width:600px){
+
+    .grid-container{
+        grid-template-rows: 1fr 10fr;
+    }
+}
