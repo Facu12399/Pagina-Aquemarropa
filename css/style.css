@@ -148,7 +148,12 @@
     gap: 10px;
 }
 
-.item-galeria-producto{
+.items{
+    display: flex;
+    flex-direction: column;
+}
+
+.items .item-galeria-producto{
     border: 1px solid black;
     display: flex;
     flex-direction: column;
@@ -159,17 +164,19 @@
     overflow: hidden;
 }
 
-.item-galeria-producto figure{
-    width: 252px;
-    height: 152px;
+.items .item-galeria-producto{
+    width: 250px;
+    height: 150px;
     z-index: 1;
 }
 
-.item-galeria-producto figure a{
+.items .item-galeria-producto a{
     text-decoration: none;
+    width: 100%;
+    height: 100%;
 }
 
-.item-galeria-producto figure a img{
+.items .item-galeria-producto a img{
     width: 100%;
     height: 100%;
 }
@@ -207,6 +214,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
+}
+
+.item-footer{
+    margin-top: 15px;
 }
 
 .lista-footer{
@@ -281,7 +292,7 @@
         gap: 5px;
     }
 
-    .item-galeria-producto{
+    .items .item-galeria-producto{
         border: 1px solid black;
         display: flex;
         flex-direction: column;
@@ -292,7 +303,7 @@
         overflow: hidden;
     }
     
-    .item-galeria-producto figure{
+    .items .item-galeria-producto {
         width: 162px;
         height: 102px;
         z-index: 1;
@@ -362,13 +373,13 @@
         border: 1px solid #000;
         display: flex;
         flex-direction: column;
-        width: 230px;
-        height: 300px;
+        width: 250px;
+        height: 320px;
     }
     
     .item-galeria figure{
-        width: 230px;
-        height: 130px;
+        width: 250px;
+        height: 150px;
     }
 
     .galeria-grid-productos{
@@ -382,14 +393,21 @@
         border: 1px solid black;
         display: flex;
         flex-direction: column;
+        align-items: center;
         width: 160px;
         height: 100px;
         box-sizing: border-box;
         box-shadow: 0 0 5px 0 #000;
         overflow: hidden;
     }
+
+    .items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     
-    .item-galeria-producto figure{
+    .items .item-galeria-producto{
         width: 162px;
         height: 102px;
         z-index: 1;
