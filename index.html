@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Changa:wght@200..800&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>AQUEMARROPA</title>
 </head>
 <body>
@@ -15,20 +16,25 @@
             <h1>AQUEMARROPA</h1>
         </header>
         <nav class="menu">
-            <img id="hamburguesa" src="img/menu.png" alt="">
+            <i id="hamburguesa" class="fa-solid fa-bars"></i>
             <ul id="menu-desplegable">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Mis Compras</a></li>      
-                <li id="agrandar">
-                    <a href="#" id="catalogo">Catalogo de Productos</a>
-                    <ul id="catalogo-desplegable">
-                        <li><a href="#">Remeras</a></li>
-                        <li><a href="#">Camisas</a></li>
-                        <li><a href="#">Calzado</a></li>
-                        <li><a href="#">Sueters</a></li>
-                        <li><a href="#">Pantalones</a></li>
-                        <li><a href="#">Gorros y accesorios</a></li>
-                    </ul>
+                <li class="item-catalogo">
+                    <div id="agrandar">
+                        <a href="#" id="catalogo">Catalogo de Productos</a>
+                        <i id="angle" class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div id="desplegue">
+                        <ul id="catalogo-desplegable">
+                            <li><a href="#">Remeras</a></li>
+                            <li><a href="#">Camisas</a></li>
+                            <li><a href="#">Calzado</a></li>
+                            <li><a href="#">Sueters</a></li>
+                            <li><a href="#">Pantalones</a></li>
+                            <li><a href="#">Gorros y accesorios</a></li>
+                        </ul>
+                    </div>          
                 </li>
                 <li><a href="#">Envios</a></li>
                 <li id="sacar-borde"><a href="#">Sobre Nosotros</a></li>
@@ -236,4 +242,5 @@
 
 <script src="js/menu_navegacion.js"></script>
 <script src="js/menu_hamburguesa.js"></script>
+<script src="js/catalogo.js"></script>
 </html>
