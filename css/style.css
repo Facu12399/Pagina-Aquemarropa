@@ -57,12 +57,12 @@
     border-right: none;
 }
 
-.item-catalogo{
-    cursor: pointer;
+.menu #menu-desplegable .item-catalogo #catalogo{
+    padding-right: 0;
 }
 
-.menu #menu-desplegable #agrandar{
-    width: 100%;
+.item-catalogo{
+    cursor: pointer;
 }
 
 #catalogo-desplegable{
@@ -335,9 +335,15 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center; /* Centrar verticalmente */
+        align-items: center;
         background-color: #dfdfdf;
         padding: 10px;
+    }
+
+    #hamburguesa{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .menu #menu-desplegable{
@@ -346,6 +352,10 @@
         justify-content: flex-start;
         align-items: flex-start;
         width: 100%;
+    }
+
+    .menu #menu-desplegable .item-catalogo #catalogo{
+        padding-right: 5px;
     }
 
     /* .menu #menu-desplegable #agrandar{
@@ -358,7 +368,7 @@
         width: 100%;
     }
 
-    .menu #menu-desplegable #agrandar{
+    .menu #menu-desplegable .agrandar{
         display: flex;
         flex-direction: row;
         justify-content: flex-start;

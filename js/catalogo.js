@@ -1,7 +1,7 @@
-const elemento = document.getElementById('agrandar');
+const elemento = document.getElementsByClassName('agrandar');
 let clic = false;
 
-elemento.addEventListener('click', ()=>{
+elemento[0].addEventListener('click', ()=>{
     const animacion = document.getElementById('angle');
     if(clic == false){
         animacion.style.transform = 'rotate(180deg)';
