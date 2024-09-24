@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     border: none;
-    font-family: "Palanquin", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
     font-weight: 500;
     font-style: normal;
 }
@@ -13,7 +13,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    gap: 10px;
+    gap: 0px;
     text-align: center;
     background-color: #fff;
     color: #873600;
@@ -23,6 +23,11 @@
 
 .header{
     font-weight: bold;
+    background-color: #000;
+}
+
+.header h1 {
+    padding: 20px;
 }
 
 /*MENU*/
@@ -91,7 +96,7 @@
     justify-content: space-around;
 }
 
-.main section, .main h3{
+.main h3{
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -104,6 +109,11 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     gap: 10px;
+}
+
+.mas-vendidos {
+    margin: 20px;
+    margin-bottom: 40px;
 }
 
 #flecha-izquierda, #flecha-derecha{
@@ -158,6 +168,8 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .items{
@@ -214,6 +226,12 @@
 .zoom:hover{
     transform: scale(1.1);
     transform-origin: center center;
+}
+
+.title-productos {
+    background-color: #000;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 /*FOOTER*/
