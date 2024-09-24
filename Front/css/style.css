@@ -66,11 +66,10 @@
 }
 
 #catalogo-desplegable{
-    display: flex;
+    display: none;
     flex-direction: column;
     list-style: none;
     align-items: start;
-    display: none;
 }
 
 /*HAMBURGUESA*/
