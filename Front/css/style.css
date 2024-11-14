@@ -2,9 +2,10 @@
     margin: 0;
     padding: 0;
     border: none;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-weight: 500;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
     font-style: normal;
+    color: #873600;
 }
 
 /*CONTENEDOR*/
@@ -15,19 +16,19 @@
     grid-template-rows: auto;
     gap: 0px;
     text-align: center;
-    background-color: #fff;
-    color: #873600;
+    background-color: #000;
 }
 
 /*HEADER*/
 
 .header{
     font-weight: bold;
-    background-color: #000;
+    background-color: #474747;
 }
 
 .header h1 {
     padding: 20px;
+    color: #fff;
 }
 
 /*MENU*/
@@ -36,45 +37,57 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #dfdfdf;
-    padding: 10px;
+    background-color: #f1c40f;
     position: relative;
+    height: 50px;
+    transition: 5s all;
 }
 
 .menu #menu-desplegable{
     display: flex;
     flex-direction: row;
     list-style: none;
-}
-
-.menu #menu-desplegable a{
-    text-decoration: none;
-    color: #873600;
-    font-size: 13px;
-    padding: 1em;
+    align-items: center;
 }
 
 .menu #menu-desplegable li{
-    padding: 5px;
+    text-decoration: none;
+    color: #873600;
+    font-size: 13px;
+    padding: 10px;
+    transition: 2s all;
+}
+
+.menu #menu-desplegable li a {
+    text-decoration: none;
+    color: #873600;
+}
+
+.menu #menu-desplegable #list-item {
+    cursor: pointer;
+}
+
+.menu #menu-desplegable li #angle {
+    transition: 2s all;
+}
+
+.menu #menu-desplegable li #catalogo-desplegable {
+    list-style: none;
+    position: fixed;
+    background-color: #f1c40f;
+    display: flex;
+    opacity: 0;
+    left: 0;
+    transition: opacity 1s ease;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
 }
 
 .menu #menu-desplegable #sacar-borde{
     border-right: none;
-}
-
-.menu #menu-desplegable .item-catalogo #catalogo{
-    padding-right: 0;
-}
-
-.item-catalogo{
-    cursor: pointer;
-}
-
-#catalogo-desplegable{
-    display: none;
-    flex-direction: column;
-    list-style: none;
-    align-items: start;
 }
 
 /*HAMBURGUESA*/
@@ -111,6 +124,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    margin-bottom: -3.5px;
 }
 
 .carrusel-main img{
@@ -142,7 +156,7 @@
 }
 
 .item-galeria{
-    border: 1px solid #000;
+    border: 1px solid #fff;
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -174,7 +188,7 @@
 
 .info-producto > *{
     font-size: 12px;
-    color: #000;
+    color: #fff;
 }
 
 .precio{
@@ -249,7 +263,7 @@
 }
 
 .title-productos {
-    background-color: #000;
+    background-color: #f1c40f;;
     width: 100%;
     margin-bottom: 20px;
 }
@@ -257,7 +271,7 @@
 /*FOOTER*/
 
 .footer{
-    background-color: #dfdfdf;
+    background-color: #474747;
 }
 
 .contenedor-footer{
@@ -285,7 +299,7 @@
 
 .lista-footer li a{
     text-decoration: none;
-    color: #873600;
+    color: #fff;
 }
 
 .lista-footer li a img{
@@ -295,6 +309,7 @@
 
 .footer .contenedor-footer .item-footer div p{
     font-size: 10px;
+    color: #fff;
 }
 
 .nav, .header, .main, .footer{

@@ -1,16 +1,30 @@
-const animacion = document.getElementById('desplegue');
-const elemento = document.getElementById('agrandar');
+// const animacion = document.getElementById('desplegue');
+const elemento = document.getElementById('list-item');
 const flechita = document.getElementById('angle');
+const catalogo = document.getElementById('catalogo-desplegable')
 let clic = false;
 
-elemento.addEventListener('click', ()=>{
-    if(clic == false){
+elemento.addEventListener('click', (e) => { 
+    e.preventDefault();
+    if (catalogo.style.display = 'none' && clic == false) {
         flechita.style.transform = 'rotate(180deg)';
-        animacion.style.transition = 'display 0.5s ease-in-out';
+        setTimeout(() => { catalogo.style.opacity = 1;})
         clic = true;
-    } else{
+    } else {
         flechita.style.transform = 'rotate(0deg)';
-        animacion.style.transition = 'display 0.5s ease-in-out';
+        setTimeout(() => { catalogo.style.opacity = 0;})
         clic = false;
     }
 })
+
+/*
+elemento.addEventListener('click', ()=>{
+    if(clic == false){
+        flechita.style.transform = 'rotate(180deg)';
+        catalogo.style.display = 'flex';
+        clic = true;
+    } else{
+        flechita.style.transform = 'rotate(0deg)';
+        clic = false;
+    }
+})*/
