@@ -17,6 +17,19 @@ elemento.addEventListener('click', (e) => {
     }
 })
 
+flechita.addEventListener('click', (e) => { 
+    e.preventDefault();
+    if (catalogo.style.display = 'none' && clic == false) {
+        flechita.style.transform = 'rotate(180deg)';
+        setTimeout(() => { catalogo.style.opacity = 1;})
+        clic = true;
+    } else {
+        flechita.style.transform = 'rotate(0deg)';
+        setTimeout(() => { catalogo.style.opacity = 0;})
+        clic = false;
+    }
+})
+
 /*
 elemento.addEventListener('click', ()=>{
     if(clic == false){
